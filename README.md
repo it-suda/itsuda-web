@@ -1,5 +1,5 @@
 # itsuda-web
-> 잇수다 Web Frontend   
+> 잇수다 (Web Frontend)   
 > IT 업계 사람들을 위한 이벤트 공유 서비스
 
 ### Homepage
