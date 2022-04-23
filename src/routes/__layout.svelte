@@ -1,17 +1,15 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
+    import Footer from '$lib/footer/Footer.svelte';
 	import '../app.css';
 </script>
 
+<h1 class="hidden">잇수다</h1>
 <Header />
-
 <main>
 	<slot />
 </main>
-
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+<Footer />
 
 <style>
 	main {
@@ -21,25 +19,8 @@
 		padding: 1rem;
 		width: 100%;
 		max-width: 1024px;
+        min-height: calc(100vh - var(--header-height) - var(--footer-height));
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
 	}
 </style>
