@@ -20,5 +20,5 @@
 - SvelteKit
 - JavaScript
 - Sass
-- Rollup
+- Vite
 - Vercel
