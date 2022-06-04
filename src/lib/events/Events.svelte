@@ -1,13 +1,13 @@
 <script lang="ts">
-    import '../../app.css';
+	import '$assets/style/app.css';
 </script>
 
 <div class="events">
-    <h2>Events</h2>
+	<h2>Events</h2>
 </div>
 
 <style>
-    .events {
-        height: 400px;
-    }
+	.events {
+		height: 400px;
+	}
 </style>
