@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
-    import Footer from '$lib/footer/Footer.svelte';
+	import Footer from '$lib/footer/Footer.svelte';
 	import '$assets/style/app.css';
 </script>
 
@@ -16,11 +16,10 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 1024px;
-        min-height: calc(100vh - var(--header-height) - var(--footer-height));
+		max-width: var(--page-max-width);
+		min-height: calc(100vh - var(--header-height) - var(--footer-height));
+		padding-inline: var(--page-padding);
 		margin: 0 auto;
-		box-sizing: border-box;
 	}
 </style>
