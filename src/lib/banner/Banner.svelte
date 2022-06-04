@@ -1,13 +1,13 @@
 <script lang="ts">
-    import '$assets/style/app.css';
+	import '$assets/style/app.css';
 </script>
 
 <div class="banner">
-    <h2>Banner</h2>
+	<h2>Banner</h2>
 </div>
 
 <style>
-    .banner {
-        height: 400px;
-    }
+	.banner {
+		height: 400px;
+	}
 </style>
