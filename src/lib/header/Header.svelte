@@ -14,41 +14,41 @@
 	</div>
 </header>
 
-<style>
+<style lang="scss">
 	header {
 		position: sticky;
 		top: 0;
 		height: var(--header-height);
 		background-color: var(--color-dark-1);
-	}
 
-	.inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		max-width: var(--page-max-width);
-		height: 100%;
-		padding-inline: var(--page-padding);
-		margin: 0 auto;
-	}
+		.inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			max-width: var(--page-max-width);
+			height: 100%;
+			padding-inline: var(--page-padding);
+			margin: 0 auto;
+		}
 
-	.logo {
-		width: 52px;
-		height: 52px;
-	}
+		.logo {
+			width: 52px;
+			height: 52px;
 
-	.logo a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+			}
 
-	.logo img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
 	}
 </style>
