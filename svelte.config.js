@@ -14,15 +14,16 @@ const config = {
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
 		},
-		vite:{
-				resolve: {
-						alias: {
-								$assets: path.resolve('./src/assets'),
-								$lib: path.resolve('./src/lib'),
-								$routes: path.resolve('./src/routes'),
-						}
+		vite: {
+			resolve: {
+				alias: {
+					$data: path.resolve('./src/data'),
+					$assets: path.resolve('./src/assets'),
+					$lib: path.resolve('./src/lib'),
+					$routes: path.resolve('./src/routes')
 				}
-		},
+			}
+		}
 	}
 };
 

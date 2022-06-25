@@ -20,17 +20,7 @@
 		top: 0;
 		height: var(--header-height);
 		background-color: var(--color-dark-1);
-
-		.inner {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 100%;
-			max-width: var(--page-max-width);
-			height: 100%;
-			padding-inline: var(--page-padding);
-			margin: 0 auto;
-		}
+		border-bottom: 1px solid var(--color-gray-2);
 
 		.logo {
 			width: 52px;

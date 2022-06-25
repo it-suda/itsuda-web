@@ -1,14 +1,23 @@
 <script lang="ts">
 	import logo from '$assets/images/itsuda-logo.png';
 	import '$assets/style/app.css';
+	import { helpMail } from '$data/links';
 </script>
 
 <footer>
 	<h2 class="hidden">Footer</h2>
-	<div class="corner">
-		<a href="/">
-			<img src={logo} alt="Itsuda" />
-		</a>
+	<div class="inner">
+		<div class="contents">
+			<div class="logo">
+				<a href="/">
+					<img src={logo} alt="Itsuda" />
+				</a>
+				<span>© 2022 Itsuda</span>
+			</div>
+			<nav>
+				<a href={helpMail}>문의하기</a>
+			</nav>
+		</div>
 	</div>
 </footer>
 
@@ -17,24 +26,42 @@
 		display: flex;
 		justify-content: space-between;
 		height: var(--footer-height);
-		background-color: #3b3b3b;
+		background-color: var(--color-dark-1);
+		color: var(--color-lightgray-2);
+		font-size: 14px;
 
-		.corner {
-			width: 3em;
-			height: 3em;
-
-			a {
+		.inner {
+			.contents {
 				display: flex;
-				align-items: center;
-				justify-content: center;
+				justify-content: space-between;
 				width: 100%;
 				height: 100%;
-			}
+				border-top: 1px solid var(--color-gray-2);
 
-			img {
-				width: 2em;
-				height: 2em;
-				object-fit: contain;
+				.logo {
+					display: flex;
+					align-items: center;
+					gap: 5px;
+
+					a {
+						img {
+							width: 40px;
+							height: 40px;
+							object-fit: contain;
+							opacity: 0.6;
+
+							&:hover {
+								opacity: 0.7;
+							}
+						}
+					}
+				}
+
+				nav {
+					display: flex;
+					align-items: center;
+					padding-inline: 5px;
+				}
 			}
 		}
 	}
