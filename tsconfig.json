@@ -3,6 +3,8 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
+			"$data": ["src/data"],
+			"$data/*": ["src/data/*"],
 			"$assets": ["src/assets"],
 			"$assets/*": ["src/assets/*"],
 			"$lib": ["src/lib"],
