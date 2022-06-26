@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
 	import Footer from '$lib/footer/Footer.svelte';
-	import '$assets/style/app.css';
+	import '$assets/style/app.scss';
 </script>
 
 <h1 class="hidden">잇수다</h1>
@@ -11,7 +11,7 @@
 </main>
 <Footer />
 
-<style>
+<style lang="scss">
 	main {
 		flex: 1;
 		display: flex;
