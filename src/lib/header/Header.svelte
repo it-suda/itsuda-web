@@ -20,6 +20,7 @@
 		height: var(--header-height);
 		background-color: var(--color-dark-1);
 		border-bottom: 1px solid var(--color-gray-2);
+		z-index: 1;
 
 		.logo {
 			width: 52px;
