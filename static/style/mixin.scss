@@ -1,0 +1,43 @@
+@import './variables';
+
+@mixin xs {
+	// 410px 이하
+	@media (max-width: #{$breakpoint-xs}) {
+		@content;
+	}
+}
+
+@mixin sm {
+	// 600px 이하
+	@media (max-width: #{$breakpoint-sm}) {
+		@content;
+	}
+}
+
+@mixin md {
+	// 850px 이하
+	@media (max-width: #{$breakpoint-md}) {
+		@content;
+	}
+}
+
+@mixin lg {
+	// 1060px 이하
+	@media (max-width: #{$breakpoint-lg}) {
+		@content;
+	}
+}
+
+@mixin xl {
+	// 1440px 이하
+	@media (max-width: #{$breakpoint-xl}) {
+		@content;
+	}
+}
+
+@mixin xl2 {
+	// 1440px 이상
+	@media (min-width: #{$breakpoint-xl}) {
+		@content;
+	}
+}

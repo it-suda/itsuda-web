@@ -1,6 +1,5 @@
 <script lang="ts">
 	import logo from '$assets/images/itsuda-logo.png';
-	import '$assets/style/app.css';
 </script>
 
 <header>

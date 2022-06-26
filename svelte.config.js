@@ -6,7 +6,11 @@ import path from 'path';
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess(),
+	preprocess: preprocess({
+		scss: {
+			prependData: "@import './static/style/style.scss';"
+		}
+	}),
 
 	kit: {
 		adapter: vercel(),
@@ -24,6 +28,13 @@ const config = {
 				}
 			}
 		}
+	},
+
+	onwarn: (warning, handler) => {
+		const { code, frame } = warning;
+		if (code === 'css-unused-selector') return;
+
+		handler(warning);
 	}
 };
 
