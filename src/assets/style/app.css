@@ -24,6 +24,7 @@
 
 * {
 	box-sizing: border-box;
+	word-break: keep-all;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .inner {
