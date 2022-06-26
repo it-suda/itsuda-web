@@ -18,7 +18,7 @@
 
 ### Stack
 - SvelteKit
-- JavaScript
+- JS/TS
 - Sass
 - Vite
 - Vercel
