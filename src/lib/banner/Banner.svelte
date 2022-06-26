@@ -1,5 +1,4 @@
 <script lang="ts">
-	import '$assets/style/app.css';
 	import banners from '$data/banners';
 
 	const intervalTime = 2000;
@@ -56,21 +55,65 @@
 		height: 470px;
 		padding-block: 50px;
 
+		@include md {
+			width: calc(100% + var(--page-padding) * 2);
+			height: 400px;
+			margin-left: calc(var(--page-padding) * -1);
+			padding-block: 0;
+		}
+
+		@include sm {
+			height: 300px;
+		}
+
 		.banner {
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
 			border-radius: 25px;
 			padding: 50px 50px 50px 60px;
 			height: 100%;
 			background-repeat: no-repeat;
-			background-position: right;
+			background-position: right bottom;
 			transition: background-color 0.3s;
+			background-size: auto 90%;
+
+			@include lg {
+				background-size: auto 80%;
+			}
+
+			@include md {
+				padding: 30px 30px 30px 40px;
+				border-radius: 0;
+				background-position: right bottom;
+				background-size: auto 60%;
+				align-items: flex-start;
+			}
+
+			@include sm {
+				background-size: 60%;
+			}
+
+			@include xs {
+				padding: 20px;
+				background-size: 80%;
+			}
 
 			.title {
 				font-size: 40px;
 				line-height: 1.8;
 				font-weight: bold;
+
+				@include md {
+					font-size: 36px;
+				}
+
+				@include sm {
+					font-size: 28px;
+				}
+
+				@include xs {
+					font-size: 20px;
+				}
 
 				p {
 					display: flex;
@@ -83,12 +126,16 @@
 					display: inline-flex;
 					align-items: center;
 					flex-direction: column;
-					min-width: 250px;
-					height: 80px;
+					min-width: 6em;
+					height: 2em;
 					margin-right: 10px;
 					background-color: rgba(0, 0, 0, 0.1);
 					border: 5px solid white;
 					overflow: hidden;
+
+					@include xs {
+						border-width: 3px;
+					}
 
 					.name {
 						position: absolute;
