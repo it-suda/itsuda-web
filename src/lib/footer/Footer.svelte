@@ -28,6 +28,7 @@
 		background-color: var(--color-dark-1);
 		color: var(--color-lightgray-2);
 		font-size: 14px;
+		margin-bottom: 70px;
 
 		.inner {
 			.contents {

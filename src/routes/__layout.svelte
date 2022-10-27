@@ -20,6 +20,6 @@
 		max-width: var(--page-max-width);
 		min-height: calc(100vh - var(--header-height) - var(--footer-height));
 		padding-inline: var(--page-padding);
-		margin: 0 auto;
+		margin: 0 auto 100px;
 	}
 </style>
